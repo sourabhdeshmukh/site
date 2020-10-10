@@ -5,7 +5,7 @@
 
     "builddrafts": false,
 
-    "baseurl": "http://localhost",
+    "baseurl": "/",
     "canonifyurls": true,
     "permalinks": {
         "post": ":year/:month/:day/:title/",
