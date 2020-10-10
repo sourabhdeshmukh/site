@@ -1,0 +1,16 @@
+name = "Lanyon"
+license = "MIT"
+licenselink = "https://github.com/sourabhdeshmukh/site/blob/master/LICENSE.md"
+description = "Lanyon-Hugo is a theme designed for blogging."
+homepage = "http://localhost"
+tags = ["blog",]
+features = ["blog", ]
+min_version = 0.14
+
+[author]
+    name = "sourabhdeshmukh"
+
+[original]
+    author =  "mdo"
+    homepage = "https://github.com/poole/lanyon"
+    repo = "https://github.com/poole/lanyon"
