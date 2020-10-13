@@ -5,31 +5,38 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ if .Site.Params.description }}{{ .Site.Params.description }}{{ else }}A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.{{ end }}</p>
+    <figure>
+     <p>{{ if .Site.Params.description }}{{ .Site.Params.description }}{{ else }} <a href="/" target="_blank"><img src="/assets/sd_white.png" alt="sourabhdeshmukh" style="vertical-align:middle" /></a>{{ end }}</p>
+    <figcaption><b>sourabhdeshmukh.in</b></figcaption>
+    </figure>
   </div>
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item {{ if .IsHome }} active {{ end }}" href="/">Home</a>
     <a class="sidebar-nav-item {{ if eq .RelPermalink "/post/" }} active {{ end }}" href="/post">Posts</a>
-    {{- $currentPage := . }}
+    <a class="sidebar-nav-item {{ if eq .RelPermalink "/tags/" }} active {{ end }}" href="/tags">Tags</a>
+    <a class="sidebar-nav-item {{ if eq .RelPermalink "/categories/" }} active {{ end }}" href="/categories">Categories</a>
+    <!--{{- $currentPage := . }}
     {{- range .Site.Menus.main -}}
     <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-    {{- end -}}
-
-    {{- $thisperma := .Permalink }}
+    {{- end -}}-->
+   
+    <!--{{- $thisperma := .Permalink }}
     {{ range .Site.Pages.ByWeight -}}
       {{ if isset .Params "sidebar" -}}
         <a class="sidebar-nav-item {{ if eq .Permalink $thisperma }} active {{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end -}}
-    {{ end -}}
+    {{ end -}}-->
 
-    {{- with .Site.Params.Github }}
-    <a class="sidebar-nav-item" href="{{ .url }}/archive/{{ .head }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ .url }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently on {{ .head }}</span>
-    {{ end -}}
-  </nav>
-
+    <!--{{- with .Site.Params.Github }}
+    //<a class="sidebar-nav-item" href="{{ .url }}/archive/{{ .head }}.zip">Download</a>
+    //<a class="sidebar-nav-item" href="{{ .url }}">GitHub project</a>
+    //<span class="sidebar-nav-item">Currently on {{ .head }}</span>
+    {{ end -}}-->
+  </nav><!--
+  <div class="sidebar-item">
+  <a href="https://www.linkedin.com/in/sourabh-deshmukh">LinkedIn</a>&emsp;|&emsp;<a href="https://www.twitter.com/100rabhdeshmukh">Twitter</a>
+  </div>-->
   <div class="sidebar-item">
     <p>&copy; {{ .Site.LastChange.Year }}. All rights reserved.</p>
   </div>
