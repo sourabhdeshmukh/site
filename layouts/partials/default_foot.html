@@ -3,5 +3,8 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     {{ template "_internal/google_analytics_async.html" . }}
+    <div class="footer" position="absolute">
+        <p>Copyright &copy; {{ .Site.LastChange.Year }}-{{ now.Format "2006" }}. sourabhdeshmukh.in. Published with &#10084; Hugo.</p>
+    </div>
   </body>
 </html>

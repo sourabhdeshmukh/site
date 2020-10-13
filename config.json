@@ -23,28 +23,28 @@
         }
     },
 
-    "pygmentsuseclasses": true,
+   "Paginate": 3,  
+ 
+   "sitemap": {
+      "changefreq": "daily",
+      "filename": "sitemap.xml",
+      "priority": 0.5
+   },
 
-    "menu": {
-        "main": [
-            {
-                "identifier": "categories",
-                "name": "Categories Section from Menu",
-                "title": "Categories section",
-                "url": "/categories/",
-                "weight": -110
-            }
-        ]
-    },
+    "taxonomies": {
+      "category": "categories",
+      "tag": "tags"
+     },  
 
     "params": {
-        "Title": "Lanyon",
-        "Tagline": "A Jekyll theme",
-        "Author": "Mark Otto",
-        "DateForm": "Jan 2 2006",
+        "Title": "sourabhdeshmukh.in",
+        "Tagline": "Cloud of information",
+        "Author": "Sourabh Deshmukh",
+        "DateForm": "Jan 2, 2006",
         "mainSections": [
             "post"
         ],
+        "disqusShortname": "sourabhdeshmukh",
         "Github": {
             "Url": "http://github.com/sourabhdeshmukh/site",
             "Head": "master"
