@@ -5,7 +5,7 @@
 
     "builddrafts": false,
 
-    "baseurl": "/",
+    "baseurl": "https://sourabhdeshmukh.in/",
     "canonifyurls": true,
     "permalinks": {
         "post": ":year/:month/:day/:title/",
