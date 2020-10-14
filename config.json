@@ -23,7 +23,7 @@
         }
     },
 
-   "Paginate": 3,  
+   "Paginate": 5,  
  
    "sitemap": {
       "changefreq": "daily",
@@ -47,7 +47,7 @@
         "disqusShortname": "sourabhdeshmukh",
         "Github": {
             "Url": "http://github.com/sourabhdeshmukh/site",
-            "Head": "master"
+            "Head": "main"
         }
     }
 }

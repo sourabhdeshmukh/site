@@ -189,6 +189,13 @@ a.sidebar-nav-item:focus {
   border-color: transparent;
 }
 
+.sidebar-social-icon {
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    padding: 2.5%;
+}
+
 @media (min-width: 48em) {
   .sidebar-item {
     padding: 1.5rem;
