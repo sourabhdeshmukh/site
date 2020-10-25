@@ -55,19 +55,13 @@
    
     apt-get install hexchat  
    
-Below I have demonstated how to install hexchat      
-   
-   ![fedora](/static/images/FH.png)  
-   
-   ![Ubuntu](/static/images/UH.png)  
-   
 After download gets completed, simply run this command.  
    
     hexchat  
    
 This will run your client application or Instead of running from terminal you can navigate to your application and by clicking on hexchat application you can start your client program. when you open this application you will be prompted with similar window as shown in image.  
 
-![HexchatNetworkList](/images/HNL.png)  
+[![HexchatNetworkList](/images/HNL.png)](/images/HNL.png)  
    
    In this window first is nick name, in this field enter your username, this will be visible to all irc users. I suggest to keep        username unique which will be useful for identify other persons about your identity. So that it will be easy for others to  communicate with you.  
    
@@ -81,20 +75,20 @@ This will run your client application or Instead of running from terminal you ca
    
    After connect option a new window will open similar to below.  
    
-![HexchatNetworkList](/static/images/hex.png)  
+[![HexchatNetworkList](/images/hex.png)](/images/hex.png)  
 
 Click on the Circle before _Join this channel_ and In the text field you will see #hexchat Just erase the _hexchat_ and enter your channel name to which you want to connect.  
 
 See below for example I have connected to #dgplug and #ritinlug.  
 
-![Join Channel](/static/images/hex2.png)  
+[![Join Channel](/images/hex2.png)](/images/hex2.png)  
 
-![Join Channel](/static/images/hex1.png)  
+[![Join Channel](/images/hex1.png)](/images/hex1.png)  
 
 After that connection to channel will get establish and you will be redirected to your channel. In this can I am connected with 
 #dgplug
 
-![Channel](/static/images/sourabhex.png)  
+[![Channel](/images/sourabhex.png)](/images/sourabhex.png)  
 
 You are ready for connecting with others just type hello and greet everyone.
 

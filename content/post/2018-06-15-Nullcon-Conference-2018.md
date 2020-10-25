@@ -1,6 +1,6 @@
 {
     "title": "NULLCON - International Security Conference Goa 2018.",
-    "date": "2018-06-015",
+    "date": "2018-06-15",
     "categories": ["Conference", "Nullcon", "Experience"],
     "tags": ["Security", "Conference"]
 }
