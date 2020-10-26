@@ -125,10 +125,10 @@ $ systemctl start nagios && systemctl start httpd
 Open your browser and try to access nagios dashboard by http://<IP>/nagios
 My system assigned IP is 192.168.0.14 so In my case I will access using http://192.168.0.14/nagios when I access it in browser the browser will ask for username and password. Just enter the same username and password we created above.
 
-[![nagios auth](/images/nagios-auth.png)](/images/nagios-auth.png)
+[![nagios auth](/images/nagios-auth.PNG)](/images/nagios-auth.PNG)
 
 After entering credentials press enter and you will be presented with following Nagios Dashboard.
 
-[![nagios dashboard](/images/nagios-auth.png)](/images/nagios-dashoard.png)
+[![nagios dashboard](/images/nagios-auth.PNG)](/images/nagios-dashoard.PNG)
 
 We have configured nagios successfully. In next posts I will demonstrate about installation of plugins and configuration of nagios for monitoring.
