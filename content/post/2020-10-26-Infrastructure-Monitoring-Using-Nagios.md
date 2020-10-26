@@ -36,20 +36,14 @@ The benefits you get from using Nagios Core are
 - Planning  
   
 ### Features -
-<table border="0">
-<tr>
-<td>Visibility</td>
-<td>Reporting</td>
-<td>Proactive Planning</td>
-<td>Awareness</td>
-</tr>
-<tr>
-<td>Problem Remediation</td>
-<td>Comprehensive Monitoring</td>
-<td>Multi-Tenant Capabilities</td>
-<td>Extendable Architecture</td>
-</tr>
-</table>
+- Visibility
+- Reporting
+- Proactive Planning
+- Awareness
+- Problem Remediation
+- Comprehensive Monitoring
+- Multi-Tenant Capabilities
+- Extendable Architecture
 
 If you want to know more visit [Benefits](https://www.nagios.com/products/nagios-core/#benefits) and [Features](https://www.nagios.com/products/nagios-core/#features) of Nagios Core.
 
@@ -129,6 +123,6 @@ My system assigned IP is 192.168.0.14 so In my case I will access using http://1
 
 After entering credentials press enter and you will be presented with following Nagios Dashboard.
 
-[![nagios dashboard](/images/nagios-auth.PNG)](/images/nagios-dashoard.PNG)
+[![nagios dashboard](/images/nagios-dashboard.PNG)](/images/nagios-dashoard.PNG)
 
 We have configured nagios successfully. In next posts I will demonstrate about installation of plugins and configuration of nagios for monitoring.

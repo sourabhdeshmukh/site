@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VM on </title>
+    <link>https://sourabhdeshmukh.in/tags/vm/</link>
+    <description>Recent content in VM on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 28 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/tags/vm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Container Over VM</title>
+      <link>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</guid>
+      <description>In these post I am going to brief you about the containers. Container is like a VM, I am not denying that but they are not VM. Consider if we want to install and run application in two different VMs, we need to download binary of that applications which might have other dependencies apart from which already present inside binary. After downloading we need to install it which will install the application as well as it will check for dependencies, if they are present then only it will get install or sometimes what happens with some apps they get install but denies to run due to lack of dependencies.</description>
+    </item>
+    
+  </channel>
+</rss>

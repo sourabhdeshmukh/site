@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Red Hat on </title>
+    <link>https://sourabhdeshmukh.in/tags/red-hat/</link>
+    <description>Recent content in Red Hat on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 23 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/tags/red-hat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Journey with Linux.</title>
+      <link>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</guid>
+      <description>It all started back in 2016 around Jan/Feb, when I first saw Virtual box having kali linux installed in my laptop. It is installed by one of my friend as he took my laptop for learning about penetration and security tools workshop. Earlier I had only heard the name of kali in some of the hollywood movies so I was knowing about little about it such as this OS is used by bad people to destroy others mostly enemies.</description>
+    </item>
+    
+  </channel>
+</rss>

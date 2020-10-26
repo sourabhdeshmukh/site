@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fixeds on </title>
+    <link>https://sourabhdeshmukh.in/fixed/</link>
+    <description>Recent content in Fixeds on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/fixed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SourabhDeshmukh&#39;s Privacy Policy</title>
+      <link>https://sourabhdeshmukh.in/sourabhdeshmukhs-privacy-policy/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/sourabhdeshmukhs-privacy-policy/</guid>
+      <description>Your privacy is important to us. It is sourabhdeshmukh&amp;rsquo;s policy to respect your privacy regarding any information we may collect from you across our website, https://sourabhdeshmukh.in, and other sites we own and operate.
+We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</description>
+    </item>
+    
+    <item>
+      <title>SourabhDeshmukh&#39;s Terms of Service</title>
+      <link>https://sourabhdeshmukh.in/sourabhdeshmukhs-terms-of-service/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/sourabhdeshmukhs-terms-of-service/</guid>
+      <description>1. TermsBy accessing the website at https://sourabhdeshmukh.in, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</description>
+    </item>
+    
+    <item>
+      <title>Categories</title>
+      <link>https://sourabhdeshmukh.in/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/</guid>
+      <description>{{ $categories := .Params.categories }}
+ {{ range $key, $taxonomy := .Site.Taxonomies.categories }} {{ if eq $key $categories }} {{ range $taxonomy.Pages }} {{ .Title }} {{ end }} {{ end }} {{ end }}  </description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://sourabhdeshmukh.in/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/</guid>
+      <description>{{ $tags := .Params.tags }}
+ {{ range $key, $taxonomy := .Site.Taxonomies.tags }} {{ if eq $key $tags }} {{ range $taxonomy.Pages }} {{ .Title }} {{ end }} {{ end }} {{ end }}  </description>
+    </item>
+    
+  </channel>
+</rss>

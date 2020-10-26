@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="sourabhdeshmukh, blog, website, sourabhdeshmukh.in, personal blog">
+  <meta name="description" content="sourabhdeshmukh.in | Cloud of information">
+  <meta name="author" content="Sourabh Deshmukh">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Container Over VM &middot; SourabhDeshmukh
+    
+  </title>
+
+  
+  <link rel="stylesheet" href="https://sourabhdeshmukh.in/css/poole.css">
+  <link rel="stylesheet" href="https://sourabhdeshmukh.in/css/syntax.css">
+  <link rel="stylesheet" href="https://sourabhdeshmukh.in/css/lanyon.css">
+  <link rel="stylesheet" href="https://sourabhdeshmukh.in/css/footer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+   
+  <link rel="apple-icon-precomposed" sizes="144x144" href="https://sourabhdeshmukh.in/assets/apple-icon-precomposed.png">
+  <link rel="shortcut icon" href="https://sourabhdeshmukh.in/assets/favicon.ico">
+
+  
+  
+  <script data-ad-client="ca-pub-3533171353280390" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+  <body>
+
+    
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <figure>
+     <p> <a href="https://sourabhdeshmukh.in/" target="_blank"><img src="https://sourabhdeshmukh.in/assets/sd_white.png" alt="sourabhdeshmukh" style="vertical-align:middle" /></a></p>
+    <figcaption><b>sourabhdeshmukh.in</b></figcaption>
+    </figure>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item " href="https://sourabhdeshmukh.in/">Home</a>
+    <a class="sidebar-nav-item " href="https://sourabhdeshmukh.in/post">Posts</a>
+    <a class="sidebar-nav-item " href="https://sourabhdeshmukh.in/tags">Tags</a>
+    <a class="sidebar-nav-item " href="https://sourabhdeshmukh.in/categories">Categories</a>
+  </nav>
+
+  <div>
+        <a href="https://www.twitter.com/100rabhdeshmukh" target="_blank" class="sidebar-social-icon"><img src="https://sourabhdeshmukh.in/social/Twitter.png" alt="Twitter" width="30px" height="30px"/></a>  
+    	<a href="https://www.linkedin.com/in/sourabh-deshmukh" target="_blank" class="sidebar-social-icon"><img src="https://sourabhdeshmukh.in/social/LinkedIn.png" alt="LinkedIn" width="30px" height="30px"/></a> 
+    	<a href="https://www.github.com/sourabhdeshmukh" target="_blank" class="sidebar-social-icon"><img src="https://sourabhdeshmukh.in/social/Github.png" alt="Github" width="30px" height="30px" /></a> 
+    	<a href="mailto:mail@sourabhdeshmukh.in" target="_blank" class="sidebar-social-icon"><img src="https://sourabhdeshmukh.in/social/Mail.png" alt="Mail" width="30px" height="30px"/></a>    
+  </div>
+  <div class="sidebar-item">
+    <p>&copy; 2020. All rights reserved.</p>
+  </div>
+</div>
+
+
+    
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="https://sourabhdeshmukh.in/" title="Home">SourabhDeshmukh</a>
+            <small>Cloud of information</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+
+
+<div class="post">
+  <h1 class="post-title">Container Over VM</h1>
+  <span class="post-date">Jul 28, 2018</span>
+  <p>In these post I am going to brief you about the containers. Container is like a VM, I am not denying that but they are not VM. Consider if we want to install and run application in two different VMs, we need to download binary of that applications which might have other dependencies apart from which already present inside binary. After downloading we need to install it which will install the application as well as it will check for dependencies, if they are present then only it will get install or sometimes what happens with some apps they get install but denies to run due to lack of dependencies. If Application is perfectly running on one VM and we want to run that application on to another VM we need to perform same procedure which I mensioned above, and if all requirements are satisfied then only app will successfuly execute. Here problem is that we need to search and install packages when we want to run separate VM.</p>
+<p>Another problem is that the binary which we downloaded might support on system os or it will face system environment problem, to overcome this problem containers are used.</p>
+<p>If we only ship the application code or binary, then we cannot be sure, as each environment might be different. But if we can ship the application with its code along with its dependencies in a box to different environments, which everyone know, how to unbox and run the application in an isolated and secured away. Then things would work out. That is what the container&rsquo;s actually do. Container&rsquo;s creates execution environments.</p>
+<p>Containers are application-centric way to deliver high-performing, scalable applications on the infrastructure of your choice. Containers with microservices make a lot of sense here because we can do rapid development and deployment with confidence.Using containers we can also record a deployment by building an immutable infrastructure. if something goes wrong with our new changes, we can always come back to old known working state. Containers are cost effective than any other deployment methods available now. By all this information you might think that container is lightweight VM but they are not as Both provide isolation &amp; run our application, but the underlying technologies they use are completely different. Managing them is also different.</p>
+<p><a href="https://sourabhdeshmukh.in/images/diff.jpg"><img src="https://sourabhdeshmukh.in/images/diff.jpg" alt="HexchatNetworkList"></a></p>
+<p>VM is created on top of the hypervisor which is installed on the host operating system. Hypervisor emulates the hardware like CPU, Memory, Disk etc. from the available resources on the host system. A guest OS like Linux, Windows then gets installed on top of the emulated hardware. We put our application on top of those VM. An application has to go through the guest operating system to reach to the external world.<br>
+Whereas,<br>
+Containers directly run on the host operating system without any guest operating system of its own. Host operating system provides isolation and does resource allocation to individual container.</p>
+<p><strong>Benefits of containers :</strong></p>
+<ol>
+<li>They are very cost effective.</li>
+<li>Platform Independent</li>
+<li>Rapid application development</li>
+<li>Version Control</li>
+<li>Sharing and security</li>
+</ol>
+<p>To deploy application, you might be using the VM. But now the same application can be deployed in a container. A container runs as a process on the host system which takes very less resources as compared to VM. Due to that we can increase the density of applications on that same hardware. We can run same image on different platforms like bare-metal, virtual machine, cloud etc. and get the same consistent experience. Images can be versioned and shared easily. Containers get isolation from the host system so that they don&rsquo;t interfare with one another.</p>
+<p><strong>Use-cases of Containers :</strong></p>
+<ol>
+<li>Quick Prototyping of Ideas</li>
+<li>DevOps</li>
+<li>Continuous Integration and Deployment(CI/CD)</li>
+<li>Platform as a Service</li>
+</ol>
+<p>With containers we can prototype any ides, as with the right tooling and connecting containers require very little or no efforts. Containers are becoming the unit of execution through which we can get predictable Dev, QA and OPs environment. We can use containers in doing continuos integration and deployment. As we deploy applications with containers. Using them in Paas has become the default choice. For example Red Hat&rsquo;s OpenShift v3, Heroku are built on container technologies.</p>
+<p>Now the question arises is that where to deploy containers?<br>
+Should I deploy them on VM, BareMetal, Cloud etc. From the container&rsquo;s perspective it does not matter as it can  run anywhere. But from the perspective of a company&rsquo;s IT department, the answer is &ldquo;It depends&rdquo;. There are just so many variables which affect the decision like cost, performance, security, current skill set.</p>
+<hr>
+  <h2>Comments</h2>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "/")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'sourabhdeshmukh';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <div class="footer" position="absolute">
+        <p>Copyright &copy; 2020-2020. sourabhdeshmukh.in. Published with &#10084; Hugo. <a  href="https://sourabhdeshmukh.in/sourabhdeshmukhs-privacy-policy">Privacy Policy</a> and <a  href="https://sourabhdeshmukh.in/sourabhdeshmukhs-terms-of-service">Terms</a>.</p>
+    </div>
+
+  </body>
+</html>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tool on </title>
+    <link>https://sourabhdeshmukh.in/tags/tool/</link>
+    <description>Recent content in tool on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/tags/tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infrastructure Monitoring Using Nagios</title>
+      <link>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</guid>
+      <description>Nagios What is Nagios? Nagios is a Monitoring tool used for IT Infrastructure Monitoring to maintain zero downtime for your Applications, Services, Systems, Databases and Business Processes etc. Nagios helps to detect failures and can be configured to alert technical staff so that the failures gets detected early and remediation process can be carried out before it affects entire Infrastructure or Customers.
+Nagios Products - Nagios has four product according to your needs.</description>
+    </item>
+    
+  </channel>
+</rss>

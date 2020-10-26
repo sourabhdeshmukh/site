@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on </title>
+    <link>https://sourabhdeshmukh.in/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monitoring</title>
+      <link>https://sourabhdeshmukh.in/categories/monitoring/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://sourabhdeshmukh.in/categories/tools/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://sourabhdeshmukh.in/categories/experience/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS</title>
+      <link>https://sourabhdeshmukh.in/categories/os/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://sourabhdeshmukh.in/categories/docker/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IRC</title>
+      <link>https://sourabhdeshmukh.in/categories/irc/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/irc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>https://sourabhdeshmukh.in/categories/tutorial/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conference</title>
+      <link>https://sourabhdeshmukh.in/categories/conference/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nullcon</title>
+      <link>https://sourabhdeshmukh.in/categories/nullcon/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/categories/nullcon/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

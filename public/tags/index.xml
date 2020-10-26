@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>https://sourabhdeshmukh.in/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infrastructure</title>
+      <link>https://sourabhdeshmukh.in/tags/infrastructure/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>https://sourabhdeshmukh.in/tags/monitoring/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nagios</title>
+      <link>https://sourabhdeshmukh.in/tags/nagios/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/nagios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://sourabhdeshmukh.in/tags/open-source/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>https://sourabhdeshmukh.in/tags/tool/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>https://sourabhdeshmukh.in/tags/debian/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://sourabhdeshmukh.in/tags/linux/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat</title>
+      <link>https://sourabhdeshmukh.in/tags/red-hat/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/red-hat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers</title>
+      <link>https://sourabhdeshmukh.in/tags/containers/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://sourabhdeshmukh.in/tags/docker/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VM</title>
+      <link>https://sourabhdeshmukh.in/tags/vm/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/vm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fedora</title>
+      <link>https://sourabhdeshmukh.in/tags/fedora/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freenode</title>
+      <link>https://sourabhdeshmukh.in/tags/freenode/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/freenode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hexchat</title>
+      <link>https://sourabhdeshmukh.in/tags/hexchat/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/hexchat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IRC</title>
+      <link>https://sourabhdeshmukh.in/tags/irc/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/irc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conference</title>
+      <link>https://sourabhdeshmukh.in/tags/conference/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://sourabhdeshmukh.in/tags/security/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/tags/security/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

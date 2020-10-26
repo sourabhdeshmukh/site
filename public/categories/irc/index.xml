@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IRC on </title>
+    <link>https://sourabhdeshmukh.in/categories/irc/</link>
+    <description>Recent content in IRC on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 18 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/categories/irc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Internet Relay Chat (IRC).</title>
+      <link>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</guid>
+      <description>Jarkko Oikarinen is the inventor of IRC. He wrote client and server program for IRC in 1988 while working at university.
+What is IRC? IRC is one of the major communication medium for FOSS developers and contributors. We can able to communicate in real time with people all around the world. There are many networks of IRC servers are available through which we can connect to IRC. It can be used for large community where so many people are present, also it works on slow network.</description>
+    </item>
+    
+  </channel>
+</rss>

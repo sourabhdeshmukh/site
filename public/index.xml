@@ -1,0 +1,280 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> </title>
+    <link>https://sourabhdeshmukh.in/</link>
+    <language>en-us</language>
+    <author>Sourabh Deshmukh</author>
+    <rights>(C) 2020</rights>
+    <updated>2020-10-26 00:00:00 &#43;0000 UTC</updated>
+
+    
+      <item>
+        <title>Infrastructure Monitoring Using Nagios</title>
+        <link>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</link>
+        <pubDate>Mon, 26 Oct 2020 00:00:00 UTC</pubDate>
+        <author>Sourabh Deshmukh</author>
+        <guid>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</guid>
+        <description>&lt;h1 id=&#34;nagios&#34;&gt;Nagios&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-nagios&#34;&gt;What is Nagios?&lt;/h2&gt;
+&lt;p&gt;Nagios is a Monitoring tool used for IT Infrastructure Monitoring to maintain zero downtime for your Applications, Services, Systems, Databases and Business Processes etc. Nagios helps to detect failures and can be configured to alert technical staff so that the failures gets detected early and remediation process can be carried out before it affects entire Infrastructure or Customers.&lt;/p&gt;
+&lt;h2 id=&#34;nagios-products--&#34;&gt;Nagios Products -&lt;/h2&gt;
+&lt;p&gt;Nagios has four product according to your needs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nagios XI&lt;/li&gt;
+&lt;li&gt;Nagios Fusion&lt;/li&gt;
+&lt;li&gt;Nagios Core&lt;/li&gt;
+&lt;li&gt;Nagios Network Analyzer&lt;/li&gt;
+&lt;li&gt;Nagios Log Server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can find &lt;a href=&#34;https://bit.ly/3mpk25O&#34;&gt;Demo&lt;/a&gt; of all this tools provides by official Nagios Website.&lt;/p&gt;
+&lt;p&gt;You can get Download this tools from &lt;a href=&#34;https://bit.ly/3mpk25O&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;nagios-core&#34;&gt;Nagios Core&lt;/h2&gt;
+&lt;h3 id=&#34;summary--&#34;&gt;Summary -&lt;/h3&gt;
+&lt;p&gt;Nagios core is free whereas other products of Nagios are paid tools. Nagios Core comes with less features compared with paid version of Nagios XI.&lt;/p&gt;
+&lt;h3 id=&#34;benefits--&#34;&gt;Benefits -&lt;/h3&gt;
+&lt;p&gt;The benefits you get from using Nagios Core are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Monitoring&lt;/li&gt;
+&lt;li&gt;Alerting&lt;/li&gt;
+&lt;li&gt;Response&lt;/li&gt;
+&lt;li&gt;Reporting&lt;/li&gt;
+&lt;li&gt;Maintenace&lt;/li&gt;
+&lt;li&gt;Planning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;features--&#34;&gt;Features -&lt;/h3&gt;
+&lt;table border=&#34;0&#34;&gt;
+&lt;tr&gt;
+&lt;td&gt;Visibility&lt;/td&gt;
+&lt;td&gt;Reporting&lt;/td&gt;
+&lt;td&gt;Proactive Planning&lt;/td&gt;
+&lt;td&gt;Awareness&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Problem Remediation&lt;/td&gt;
+&lt;td&gt;Comprehensive Monitoring&lt;/td&gt;
+&lt;td&gt;Multi-Tenant Capabilities&lt;/td&gt;
+&lt;td&gt;Extendable Architecture&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;If you want to know more visit &lt;a href=&#34;https://www.nagios.com/products/nagios-core/#benefits&#34;&gt;Benefits&lt;/a&gt; and &lt;a href=&#34;https://www.nagios.com/products/nagios-core/#features&#34;&gt;Features&lt;/a&gt; of Nagios Core.&lt;/p&gt;
+&lt;h3 id=&#34;nagios-core-installation-on-centos&#34;&gt;Nagios Core Installation on Centos&lt;/h3&gt;
+&lt;p&gt;I will be using Centos 8 minimal image for demonstration. For other distributions or OS refer to the following &lt;a href=&#34;https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/quickstart.html&#34;&gt;documetation&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;prerequisite--&#34;&gt;Prerequisite -&lt;/h4&gt;
+&lt;p&gt;Disable SELinux as we dont need it for demonstration. You can configure it according to your needs.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sed -i &#39;s/SELINUX=.*/SELINUX=disabled/g&#39; /etc/selinux/config
+$ setenforce 0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Check the current status of your SELinux mode using following command.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ getenforce
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The following dependencies are required for building and running nagios on you system.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ dnf install -y gcc glibc glibc-common perl httpd php wget gd gd-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;instalation-from-source--&#34;&gt;Instalation from Source -&lt;/h4&gt;
+&lt;p&gt;Here I am using latest release version Nagios 4.4.6.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ wget https://github.com/NagiosEnterprises/nagioscore/releases/download/nagios-4.4.6/nagios-4.4.6.tar.gz
+$ tar -zxvf nagios-4.4.6.tar.gz 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we have the source code on system lets compile it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ ./configure &amp;amp;&amp;amp; make all
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We have now compiled the source code. Lets add the users to manage config files required for Nagios. The following make file creates nagios user and adds apache user in nagios group.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make install -groups-users
+$ usermod -a -G nagios apache
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, lets install HTML, CGI snf binary files and install Daemon or service.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make install
+$ make install-daemoninit
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We are ready with our service. You can enable service using&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ systemctl enable httpd.service
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Lets install command mode and configuration files.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ make install-commandmode
+$ make install-config
+$ make install-webconf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we need to update our firewall rules to access nagios dashboard on browser.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ firewall-cmd --zone=public --add-port=80/tcp
+$ firewall-cmd --zone=public --add-port=80/tcp --permanent
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will  add rules to firewall config. make sure to use a correct port while configuring firewall.
+It&amp;rsquo;s time add authentication for accessing nagios dashboard in browser.
+I will  be using Simple HTTP authentication here. Our nagios authentication will be stored in htpasswd.users file in encrypted format. The followed word nagiosadmin is our username for accessing dashboaed.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will prompt you for entering your password. Enter you password. It will again prompt you for confirmation of password just enter again the same password. 
+We will now add httpd config file. You can get sample httpd file from sample-config folder inside extracted tar file. Copy that config file into httpd configuration.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cp sample-config/httpd.conf /etc/httpd/conf.d/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we will start both the services.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ systemctl start nagios &amp;amp;&amp;amp; systemctl start httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open your browser and try to access nagios dashboard by http://&lt;IP&gt;/nagios
+My system assigned IP is 192.168.0.14 so In my case I will access using http://192.168.0.14/nagios when I access it in browser the browser will ask for username and password. Just enter the same username and password we created above.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/nagios-auth.PNG&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/nagios-auth.PNG&#34; alt=&#34;nagios auth&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After entering credentials press enter and you will be presented with following Nagios Dashboard.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/nagios-dashoard.PNG&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/nagios-auth.PNG&#34; alt=&#34;nagios dashboard&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have configured nagios successfully. In next posts I will demonstrate about installation of plugins and configuration of nagios for monitoring.&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Journey with Linux.</title>
+        <link>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</link>
+        <pubDate>Thu, 23 Aug 2018 00:00:00 UTC</pubDate>
+        <author>Sourabh Deshmukh</author>
+        <guid>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</guid>
+        <description>&lt;p&gt;It all started back in 2016 around Jan/Feb, when I first saw Virtual box having kali linux installed in my laptop. It is installed by one of my friend as he took my laptop for learning about penetration and security tools workshop. Earlier I had only heard the name of kali in some of the hollywood movies so I was knowing about little about it such as this OS is used by bad people to destroy others mostly enemies. So journey started from VM. At that time I was in second semester of my degree college. With this I was anaware about the concepts of virtualisation, virtual images etc.&lt;/p&gt;
+&lt;p&gt;when I first started the Kali VM I was told that it has default username and password which are root and root. It was very amazing and new to me as I was learning about something new which nobody from my knew in my class. So I was exited to learn more about using it. I started using GUI of kali as I was knowing about windows systems to name few Windows(XP/Vista/7/8). I got familier with some of the functionalities and file system of kali linux using GUI.&lt;/p&gt;
+&lt;p&gt;After completing my first year I was officially entered in my degree course i.e computer science &amp;amp; engineering department. One day I saw one of my friend from other class using kali with some black screen, he was typing something and some operations was getting executed, which seems like I was entered into some hollywood movie and bad guy tried to do something big. I gently walked towards him annnnnnnnnd asked him, what the hell on the earth he is doing on that black screen. He simply replied me that he is extracting zip file. I laughed so badly at that moment because in windows it can be done by 2-3 mouse click operations. I was not knowing importance and usage of terminal at that time.&lt;/p&gt;
+&lt;p&gt;I started digging more information about using terminal and learned some basic operations such as cd, mv, cp,  mkdir, touch etc. Along with that I wanted to learn about how this OS(kali linux) is installed. So at that time google and youtube helped me a lot, while watching videos and by reading tutorials from websites and blog I learnt to install kali linux on Virtual Box. While browsing on the web I came to know about two Operating systems can be installed on single hardware, the blogs were having titles such as how dualboot your pc? So I started getting information about it. I downloaded the required iso file but creating a bootable pendrive using iso which was new for me. One of my senior told me that their is a guy who can help me out in dual booting the system. After my college hours I rushed towards college hostel and started searching about the guy. One of my friend &lt;em&gt;Sonalkumar Kadelwar&lt;/em&gt; was also eager to learn about it. So hopefully we found the guy. He helped us to create the bootable pendrive and started his process for installing the kali along with windows 8.1, I was using licenced windows 8.1 which came preinstalled on my dell laptop. After installing he restared my system but it was directly booting into windows os, he tried repeatedly but failed to dual boot the system at that time we became familier with the process of installation. after college hours we use to sit together and tried resolving the issue, But we could&amp;rsquo;nt. My semester was completed at that time. During vacations I tried dual booting it with almost 50 to 60 times but failed. So I started searching for solutions, visited forums and I found some useful information about legacy system and UEFI system. At that time kali was supported only legacy versions and windows 8.1 was using UEFI version. I found some config files for kali which helps to support UEFI installation. I downloaded that files and copied on bootable device and started installation. Praying to got was only solution with me at that time. After successfully completing installation I restarted my system and &lt;strong&gt;Bingo!!!&lt;/strong&gt; I was watching black screen with some dragon background with OS names listed. It was a grub menu of kali linux. I was so happy at that time it was a wonderful achievement for me. My problem solving and browsing skills helped me to achieve this.&lt;/p&gt;
+&lt;p&gt;I started learning more about using terminal to operate system. Watched videos, attended courses, read blogs, forums etc. and I got familier with simple linux commands. Along with kali I tried to triple boot ubuntu. Because my college has ubuntu installed on the systems. Some of the Red Had Certified guys was using fedora OS, which caught my attentions and I booted that OS along with kali ubuntu and windows. After that I could&amp;rsquo;nt wait and booted parrot OS. Due to five OSes installed it was taking more time to get into the installed system so I removed the OS from pentaboot to dual booting fedora along with windows 8.1 . The resone I installed fedora because it was sugested by my seniors, which could help me in getting familier with Red Hat system to get certified.&lt;/p&gt;
+&lt;p&gt;Before the beginning of my third year I attended Red Hat Certified System Administrator training during my vacations. I got actual knowledge required to use linux distros as well as various functionalities, operations, partitions, directory system, user handling, permissions etc also added into my knowledge database permanently with a tag on my profile as &lt;em&gt;Red hat Certified System Administrator&lt;/em&gt;. After that my feelings got attached with the black screen which I started loving which then helped me to forget about windows system and one day I removed the windows permanently from my laptop. After that I was using fedora for completing assignments, programming, creating presentatons, building semester projects etc. I continued to for the second certification that was &lt;em&gt;Red Hat Certified Engineer&lt;/em&gt;. I was able to acquire server side knowledge along with linux. And it all ended up moving me permenently towards Linux systems. Daily I am using fedora to complete my work, projects, blogs etc. I can&amp;rsquo;t servive without watching the black screen a day.&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Container Over VM</title>
+        <link>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</link>
+        <pubDate>Sat, 28 Jul 2018 00:00:00 UTC</pubDate>
+        <author>Sourabh Deshmukh</author>
+        <guid>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</guid>
+        <description>&lt;p&gt;In these post I am going to brief you about the containers. Container is like a VM, I am not denying that but they are not VM. Consider if we want to install and run application in two different VMs, we need to download binary of that applications which might have other dependencies apart from which already present inside binary. After downloading we need to install it which will install the application as well as it will check for dependencies, if they are present then only it will get install or sometimes what happens with some apps they get install but denies to run due to lack of dependencies. If Application is perfectly running on one VM and we want to run that application on to another VM we need to perform same procedure which I mensioned above, and if all requirements are satisfied then only app will successfuly execute. Here problem is that we need to search and install packages when we want to run separate VM.&lt;/p&gt;
+&lt;p&gt;Another problem is that the binary which we downloaded might support on system os or it will face system environment problem, to overcome this problem containers are used.&lt;/p&gt;
+&lt;p&gt;If we only ship the application code or binary, then we cannot be sure, as each environment might be different. But if we can ship the application with its code along with its dependencies in a box to different environments, which everyone know, how to unbox and run the application in an isolated and secured away. Then things would work out. That is what the container&amp;rsquo;s actually do. Container&amp;rsquo;s creates execution environments.&lt;/p&gt;
+&lt;p&gt;Containers are application-centric way to deliver high-performing, scalable applications on the infrastructure of your choice. Containers with microservices make a lot of sense here because we can do rapid development and deployment with confidence.Using containers we can also record a deployment by building an immutable infrastructure. if something goes wrong with our new changes, we can always come back to old known working state. Containers are cost effective than any other deployment methods available now. By all this information you might think that container is lightweight VM but they are not as Both provide isolation &amp;amp; run our application, but the underlying technologies they use are completely different. Managing them is also different.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/diff.jpg&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/diff.jpg&#34; alt=&#34;HexchatNetworkList&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;VM is created on top of the hypervisor which is installed on the host operating system. Hypervisor emulates the hardware like CPU, Memory, Disk etc. from the available resources on the host system. A guest OS like Linux, Windows then gets installed on top of the emulated hardware. We put our application on top of those VM. An application has to go through the guest operating system to reach to the external world.&lt;br&gt;
+Whereas,&lt;br&gt;
+Containers directly run on the host operating system without any guest operating system of its own. Host operating system provides isolation and does resource allocation to individual container.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Benefits of containers :&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;They are very cost effective.&lt;/li&gt;
+&lt;li&gt;Platform Independent&lt;/li&gt;
+&lt;li&gt;Rapid application development&lt;/li&gt;
+&lt;li&gt;Version Control&lt;/li&gt;
+&lt;li&gt;Sharing and security&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To deploy application, you might be using the VM. But now the same application can be deployed in a container. A container runs as a process on the host system which takes very less resources as compared to VM. Due to that we can increase the density of applications on that same hardware. We can run same image on different platforms like bare-metal, virtual machine, cloud etc. and get the same consistent experience. Images can be versioned and shared easily. Containers get isolation from the host system so that they don&amp;rsquo;t interfare with one another.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use-cases of Containers :&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Quick Prototyping of Ideas&lt;/li&gt;
+&lt;li&gt;DevOps&lt;/li&gt;
+&lt;li&gt;Continuous Integration and Deployment(CI/CD)&lt;/li&gt;
+&lt;li&gt;Platform as a Service&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With containers we can prototype any ides, as with the right tooling and connecting containers require very little or no efforts. Containers are becoming the unit of execution through which we can get predictable Dev, QA and OPs environment. We can use containers in doing continuos integration and deployment. As we deploy applications with containers. Using them in Paas has become the default choice. For example Red Hat&amp;rsquo;s OpenShift v3, Heroku are built on container technologies.&lt;/p&gt;
+&lt;p&gt;Now the question arises is that where to deploy containers?&lt;br&gt;
+Should I deploy them on VM, BareMetal, Cloud etc. From the container&amp;rsquo;s perspective it does not matter as it can  run anywhere. But from the perspective of a company&amp;rsquo;s IT department, the answer is &amp;ldquo;It depends&amp;rdquo;. There are just so many variables which affect the decision like cost, performance, security, current skill set.&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Internet Relay Chat (IRC).</title>
+        <link>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</link>
+        <pubDate>Mon, 18 Jun 2018 00:00:00 UTC</pubDate>
+        <author>Sourabh Deshmukh</author>
+        <guid>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</guid>
+        <description>&lt;p&gt;&lt;em&gt;Jarkko Oikarinen&lt;/em&gt; is the inventor of IRC. He wrote client and server program for IRC in 1988 while working at university.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-irc&#34;&gt;What is IRC?&lt;/h3&gt;
+&lt;p&gt;IRC is one of the major communication medium for FOSS developers and contributors. We can able to communicate in real time with
+people all around the world. There are many networks of IRC servers are available through which we can connect to IRC. It can be
+used for large community where so many people are present, also it works on slow network. Therefor there is no issue of
+disconnecting from IRC network.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-connect&#34;&gt;How to connect?&lt;/h3&gt;
+&lt;p&gt;For connecting to IRC network we can use IRC clients by downloading from Internet. So many client programs are available for
+linux, windows and mac users, you can also use android for connecting to IRC there are many applications available on play store.&lt;br&gt;
+Here is a list of some of the client programs for IRC:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Linux:
+&lt;ul&gt;
+&lt;li&gt;Hexchat&lt;/li&gt;
+&lt;li&gt;Quassel IRC&lt;/li&gt;
+&lt;li&gt;ADIIRC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mac:
+&lt;ul&gt;
+&lt;li&gt;Hexchat&lt;/li&gt;
+&lt;li&gt;Textual&lt;/li&gt;
+&lt;li&gt;XChat Azure&lt;/li&gt;
+&lt;li&gt;Quassel IRC&lt;/li&gt;
+&lt;li&gt;Colloquy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Windows:
+&lt;ul&gt;
+&lt;li&gt;mIRC&lt;/li&gt;
+&lt;li&gt;Hexchat&lt;/li&gt;
+&lt;li&gt;IceChat&lt;/li&gt;
+&lt;li&gt;Quassel IRC&lt;/li&gt;
+&lt;li&gt;ADIIRC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mobile:
+For these devices you can use qirc client.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can download this applications from google, and configure to connect to IRC server, and further to your channel. I personally
+use Hexchat client on my Fedora 28. Also it is popular among most of the IRC users.&lt;br&gt;
+If you need help regarding irc click here &lt;a href=&#34;http://www.irchelp.org/&#34;&gt;#irchelp&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;demonstration&#34;&gt;Demonstration:&lt;/h3&gt;
+&lt;p&gt;This demonstration is for Linux users as it is also similar with mac users.&lt;/p&gt;
+&lt;p&gt;Fedora(RPM):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dnf install hexchat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ubuntu(DEB):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;apt-get install hexchat  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After download gets completed, simply run this command.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexchat  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will run your client application or Instead of running from terminal you can navigate to your application and by clicking on hexchat application you can start your client program. when you open this application you will be prompted with similar window as shown in image.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/HNL.png&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/HNL.png&#34; alt=&#34;HexchatNetworkList&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this window first is nick name, in this field enter your username, this will be visible to all irc users. I suggest to keep        username unique which will be useful for identify other persons about your identity. So that it will be easy for others to  communicate with you.&lt;/p&gt;
+&lt;p&gt;In second choice field just append with underscore character. You can give give other username also. But for identification purpose I suggest you to append it with underscore character. Similar with third choise field, here just append it with two underscore characters or any other username.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Don&amp;rsquo;t use similar username in more than one field. The application will not accept that. Use in this way for example user, user_ , thats it.&lt;/p&gt;
+&lt;p&gt;You may be thinking why we need to give to additional choices for nick name. It&amp;rsquo;s because if any of the nick is busy or used by someone the alternative will help you to connect you to the server.&lt;/p&gt;
+&lt;p&gt;In last Username field just enter your nick name and from &lt;strong&gt;Networks&lt;/strong&gt; list click on &lt;strong&gt;freenode&lt;/strong&gt; to select it and then in right bottom corner of the window select connect.&lt;/p&gt;
+&lt;p&gt;After connect option a new window will open similar to below.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/hex.png&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/hex.png&#34; alt=&#34;HexchatNetworkList&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click on the Circle before &lt;em&gt;Join this channel&lt;/em&gt; and In the text field you will see #hexchat Just erase the &lt;em&gt;hexchat&lt;/em&gt; and enter your channel name to which you want to connect.&lt;/p&gt;
+&lt;p&gt;See below for example I have connected to #dgplug and #ritinlug.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/hex2.png&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/hex2.png&#34; alt=&#34;Join Channel&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/hex1.png&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/hex1.png&#34; alt=&#34;Join Channel&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After that connection to channel will get establish and you will be redirected to your channel. In this can I am connected with
+#dgplug&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourabhdeshmukh.in/images/sourabhex.png&#34;&gt;&lt;img src=&#34;https://sourabhdeshmukh.in/images/sourabhex.png&#34; alt=&#34;Channel&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You are ready for connecting with others just type hello and greet everyone.&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>NULLCON - International Security Conference Goa 2018.</title>
+        <link>https://sourabhdeshmukh.in/2018/06/15/nullcon-international-security-conference-goa-2018./</link>
+        <pubDate>Fri, 15 Jun 2018 00:00:00 UTC</pubDate>
+        <author>Sourabh Deshmukh</author>
+        <guid>https://sourabhdeshmukh.in/2018/06/15/nullcon-international-security-conference-goa-2018./</guid>
+        <description>&lt;p&gt;The NULLCON - &lt;em&gt;Internation Security Conference 2018 GOA&lt;/em&gt; was sheduled from 27th Feb to 3rd March, as first three days for the training days&amp;rsquo; and the conference days were 2nd March and 3rd March. The Venue of Conference was Holiday Inn Resort near Mobor Beach, Goa. Nullcon happens every year on the same place and it was my First Security Conference.&lt;/p&gt;
+&lt;p&gt;I was waiting for this conference from very long time, because I was too much exited learning about bug-hunting methodologies. When we got there I fell in love with the exiting scenario of the Resort. The venue was totally awsesome, on one side it is covered with beach and other side greenery of Cavelossim. Cavelossim is the village in goa where this resort is located. I was scanning the scenario, as I could see so many people were gathered for the conference. You can see resort &lt;a href=&#34;http://www.holidayinngoa.com/&#34;&gt;here&lt;/a&gt;, although you will not be able to see the lovely decoration by NULLCON team. The organizers of the Conference was &lt;a href=&#34;https://payatu.com/&#34;&gt;paytu&lt;/a&gt; and &lt;a href=&#34;https://null.co.in/&#34;&gt;null-community&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From Miraj Junction we caught the train for Margao, Sonalkumar kadelwar was also there me. We reached Margao station in the morning ,2nd March. Around 10:30 hours we reached at the venue, and collected our ID&amp;rsquo;s for the entrance. While moving towards the entrance to my surprise I was standing infront of the &lt;a href=&#34;https://www.twitter.com/jobertbma&#34;&gt;Jobert Abama&lt;/a&gt;, who is one of the co-founder of hackerone. He greeted us with warm smile on face, and we had snaps together. After entring inside conference at one side all the stalls of sponsers were present, who were giving information about there work, and on other side all the workshops and talks were arranged in different hall&amp;rsquo;s. While scanning through the shedule we got to know that we missed the lightning keynote of conference.&lt;/p&gt;
+&lt;p&gt;We both rushed towards one of the hall and found Google VRP session was about to start, we moved gently and sat in the first row. Eduardo was the speaker of the session, he briefed us about Google VRP, Android VRP, Chrome VRP and Google Play SRP. He demonstrated some of the techniques such as cross site scripting, sql injection , cross site request forgery attacks etc. We enjoyed the session given by him. After attending session we had lunch as well as dessert in exhibition area., it was delecious. Then we attended Lightning talks about how they hacked Google (Google VRP researchers) Coolest bugs of 2017 which was briefed by karshan and Martin. The session was ended around 15:30 hours and then we were thinking about what to do next, as we both were beginners in the bug hunting.&lt;/p&gt;
+&lt;p&gt;The Bug Hunter Methodology title attracted our attention and we ran towards that spot. As we entered in the hall all the chairs were already occupied, so many people standing at the last near to the wall, there was too much crowd in that hall and absolutely there was no place to stand. Then we moved near to the stage and sat on the ground. It was clocking 16:30 hours and I was surprised about such a huge crowd. I searched for the name of speaker and got to know that he was none other than &lt;a href=&#34;https://www.twitter.com/Jhaddix&#34;&gt;&lt;em&gt;Jason Haddix&lt;/em&gt;&lt;/a&gt; founder of Bugcrowd. And he was sitting just infront of me. I secretly snapped his picture. All people were waiting for his session and the session begined. He introduced about how to approach towards testing, introduced various tools for testing, most of them were open source tools. One of the tool caught my attention was &lt;a href=&#34;https://portswigger.net/burp&#34;&gt;Burp Suite&lt;/a&gt;, which I was trying to learn earlier. The session was ended with beautiful bugcrowd stickers in my hand.&lt;/p&gt;
+&lt;p&gt;On the next day we decided to meet people and discuss about their methodologies and their contribution in web application testing. We arrived at the resort, and moved towards exhibition area and started interacting with people and had snaps together. Along with that we were searching for swag such as stickers as well as goodies. After interaction and snaps we had lunch and dessert which was arranged by Nullcon Community. Then we desided to explore the place and started wandering from corridors, we could see many people dived into there laptop, interacting with each other and trying to learn something new. The different events were happening around such as social enginnering village, Vehicle hacking etc. After that I went to the beach, there I enjoyed the flow of cool breeze of wind as well as the beautiful sound of sea waves. The scenario was amazing, after relaxing there for a hour. We moved to the stall near the exhibition area and collected swags from google, Adobe, stickers from hardware.io as well as from nullcon. We enjoyed that two beautiful days at holiday inn resort, it was amazing experience because I was able to meet lot of people, enjoyed these two days.&lt;/p&gt;
+&lt;p&gt;In evening aroud 15:45 hours we said goodbye to conference and started our journey back. Then I decided to come back next year with my own experience of handling bugs to share with other people.&lt;/p&gt;
+&lt;p&gt;You can see some of the tweet&amp;rsquo;s here.&lt;/p&gt;
+&lt;table style=&#34;width:100%&#34;&gt;
+&lt;tr&gt;
+  &lt;td&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Finally reached &lt;a href=&#34;https://twitter.com/nullcon?ref_src=twsrc%5Etfw&#34;&gt;@nullcon&lt;/a&gt;. The party... oops the conference starts tomorrow. &lt;a href=&#34;https://t.co/HUpsd6AbCC&#34;&gt;pic.twitter.com/HUpsd6AbCC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chandrapal Badshah (@bnchandrapal) &lt;a href=&#34;https://twitter.com/bnchandrapal/status/969140964446019584?ref_src=twsrc%5Etfw&#34;&gt;March 1, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;  
+  &lt;/td&gt;&lt;td&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Day 1: &lt;a href=&#34;https://twitter.com/hashtag/nullcon?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#nullcon&lt;/a&gt; security conference &lt;a href=&#34;https://t.co/WdX2Q92uc6&#34;&gt;pic.twitter.com/WdX2Q92uc6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sourabh Deshmukh (@100rabhdeshmukh) &lt;a href=&#34;https://twitter.com/100rabhdeshmukh/status/969461903142432768?ref_src=twsrc%5Etfw&#34;&gt;March 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;  
+  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I am with &lt;a href=&#34;https://twitter.com/jobertabma?ref_src=twsrc%5Etfw&#34;&gt;@jobertabma&lt;/a&gt; at &lt;a href=&#34;https://twitter.com/hashtag/nullcon?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#nullcon&lt;/a&gt; conference.&lt;br&gt;Thank you &lt;a href=&#34;https://twitter.com/jobertabma?ref_src=twsrc%5Etfw&#34;&gt;@jobertabma&lt;/a&gt; for snapshot. &lt;a href=&#34;https://t.co/N8R2ktuMWe&#34;&gt;pic.twitter.com/N8R2ktuMWe&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sourabh Deshmukh (@100rabhdeshmukh) &lt;a href=&#34;https://twitter.com/100rabhdeshmukh/status/969487691103404032?ref_src=twsrc%5Etfw&#34;&gt;March 2, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;  
+  &lt;/td&gt;&lt;td&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The team that made &lt;a href=&#34;https://twitter.com/nullcon?ref_src=twsrc%5Etfw&#34;&gt;@nullcon&lt;/a&gt; happen &lt;a href=&#34;https://t.co/NQE4kPqD7l&#34;&gt;pic.twitter.com/NQE4kPqD7l&lt;/a&gt;&lt;/p&gt;&amp;mdash; Joerg Simon (@kullnark) &lt;a href=&#34;https://twitter.com/kullnark/status/969958646405672960?ref_src=twsrc%5Etfw&#34;&gt;March 3, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;  
+  &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Epic moment of &lt;a href=&#34;https://twitter.com/Jhaddix?ref_src=twsrc%5Etfw&#34;&gt;@Jhaddix&lt;/a&gt; at &lt;a href=&#34;https://twitter.com/hashtag/nullcon?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#nullcon&lt;/a&gt; in the beginning of workshop of &lt;a href=&#34;https://twitter.com/hashtag/hacker?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#hacker&lt;/a&gt;-Methodology. &lt;a href=&#34;https://twitter.com/Bugcrowd?ref_src=twsrc%5Etfw&#34;&gt;@Bugcrowd&lt;/a&gt; @bugbounty&lt;br&gt;Thankyou Jason for such a wonderful information. &lt;a href=&#34;https://t.co/VuozRTO5GK&#34;&gt;pic.twitter.com/VuozRTO5GK&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sourabh Deshmukh (@100rabhdeshmukh) &lt;a href=&#34;https://twitter.com/100rabhdeshmukh/status/969948585365184512?ref_src=twsrc%5Etfw&#34;&gt;March 3, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+  &lt;/td&gt;&lt;td&gt;
+  &lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Awesome goodies &amp;amp; stickers. 🤩  Thank you &lt;a href=&#34;https://twitter.com/hashtag/nullcon?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#nullcon&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Bugcrowd?ref_src=twsrc%5Etfw&#34;&gt;@Bugcrowd&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/Google?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Google&lt;/a&gt; and everyone present at &lt;a href=&#34;https://twitter.com/nullcon?ref_src=twsrc%5Etfw&#34;&gt;@nullcon&lt;/a&gt; &lt;a href=&#34;https://t.co/35TDuID3kI&#34;&gt;pic.twitter.com/35TDuID3kI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sourabh Deshmukh (@100rabhdeshmukh) &lt;a href=&#34;https://twitter.com/100rabhdeshmukh/status/970064388664143872?ref_src=twsrc%5Etfw&#34;&gt;March 3, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+  &lt;/td&gt;&lt;/tr&gt;  
+&lt;/table&gt;
+</description>
+      </item>
+    
+
+  </channel>
+</rss>

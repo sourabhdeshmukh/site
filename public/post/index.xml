@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>https://sourabhdeshmukh.in/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sourabhdeshmukh.in/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infrastructure Monitoring Using Nagios</title>
+      <link>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</link>
+      <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</guid>
+      <description>Nagios What is Nagios? Nagios is a Monitoring tool used for IT Infrastructure Monitoring to maintain zero downtime for your Applications, Services, Systems, Databases and Business Processes etc. Nagios helps to detect failures and can be configured to alert technical staff so that the failures gets detected early and remediation process can be carried out before it affects entire Infrastructure or Customers.
+Nagios Products - Nagios has four product according to your needs.</description>
+    </item>
+    
+    <item>
+      <title>Journey with Linux.</title>
+      <link>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</guid>
+      <description>It all started back in 2016 around Jan/Feb, when I first saw Virtual box having kali linux installed in my laptop. It is installed by one of my friend as he took my laptop for learning about penetration and security tools workshop. Earlier I had only heard the name of kali in some of the hollywood movies so I was knowing about little about it such as this OS is used by bad people to destroy others mostly enemies.</description>
+    </item>
+    
+    <item>
+      <title>Container Over VM</title>
+      <link>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</guid>
+      <description>In these post I am going to brief you about the containers. Container is like a VM, I am not denying that but they are not VM. Consider if we want to install and run application in two different VMs, we need to download binary of that applications which might have other dependencies apart from which already present inside binary. After downloading we need to install it which will install the application as well as it will check for dependencies, if they are present then only it will get install or sometimes what happens with some apps they get install but denies to run due to lack of dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Internet Relay Chat (IRC).</title>
+      <link>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</guid>
+      <description>Jarkko Oikarinen is the inventor of IRC. He wrote client and server program for IRC in 1988 while working at university.
+What is IRC? IRC is one of the major communication medium for FOSS developers and contributors. We can able to communicate in real time with people all around the world. There are many networks of IRC servers are available through which we can connect to IRC. It can be used for large community where so many people are present, also it works on slow network.</description>
+    </item>
+    
+    <item>
+      <title>NULLCON - International Security Conference Goa 2018.</title>
+      <link>https://sourabhdeshmukh.in/2018/06/15/nullcon-international-security-conference-goa-2018./</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sourabhdeshmukh.in/2018/06/15/nullcon-international-security-conference-goa-2018./</guid>
+      <description>The NULLCON - Internation Security Conference 2018 GOA was sheduled from 27th Feb to 3rd March, as first three days for the training days&amp;rsquo; and the conference days were 2nd March and 3rd March. The Venue of Conference was Holiday Inn Resort near Mobor Beach, Goa. Nullcon happens every year on the same place and it was my First Security Conference.
+I was waiting for this conference from very long time, because I was too much exited learning about bug-hunting methodologies.</description>
+    </item>
+    
+  </channel>
+</rss>

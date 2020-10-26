@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/sourabhdeshmukhs-privacy-policy/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/sourabhdeshmukhs-terms-of-service/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/infrastructure/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/2020/10/26/infrastructure-monitoring-using-nagios/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/monitoring/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/monitoring/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/nagios/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/open-source/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/post/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/tool/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/tools/</loc>
+    <lastmod>2020-10-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/debian/</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/experience/</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/2018/08/23/journey-with-linux./</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/linux/</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/os/</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/red-hat/</loc>
+    <lastmod>2018-08-23T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/2018/07/28/container-over-vm/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/containers/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/docker/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/docker/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/vm/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/fedora/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/freenode/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/hexchat/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/2018/06/18/internet-relay-chat-irc./</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/irc/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/irc/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/tutorial/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/conference/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/conference/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/categories/nullcon/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/2018/06/15/nullcon-international-security-conference-goa-2018./</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/tags/security/</loc>
+    <lastmod>2018-06-15T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sourabhdeshmukh.in/fixed/</loc>
+    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>
