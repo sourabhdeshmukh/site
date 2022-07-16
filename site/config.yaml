@@ -55,7 +55,7 @@ params:
   title: "sourabhdeshmukh"
   description: Personal website of Sourabh Deshmukh
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/images/apple-icon-precomposed.png"
 
   theme:
     disableThemeToggle: false
@@ -105,11 +105,11 @@ params:
     title: "Sourabh Deshmukh."
     subtitle: "I am a Software Engineer"
     content: "I am a passionate Software Engineer, Full-Stack engineer, and DevOps Engineer. I use modern technologies to implement various software applications that look great, feel fantastic, and function correctly."
-    image: /images/hero.svg
+    image: /images/profile.svg
     button:
       enable: true
       name: "Resume"
-      url: "/resume.pdf"
+      url: "docs/resume.pdf"
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -127,7 +127,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "/images/about.svg"
     content: |-
       I am a Software Engineer passionate about Software Development, Full-Stack Development, and DevOps engineering. I have a background in computer science and mathematics and a strong interest in the intersection of technology. I am currently Computer Science Masters's Student at [Santa Clara University.](https://www.scu.edu) in Santa Clara, CA. 
 
@@ -206,7 +206,7 @@ params:
 
       - job: "Software Engineer (Internship)"
         company: "CloudYuga"
-        companyUrl: "hhttps://cloudyuga.guru/"
+        companyUrl: "https://cloudyuga.guru/"
         date: "May 2018 - July 2018"
         info:
           enable: true
@@ -225,60 +225,55 @@ params:
     enable: true
     # index: true
     items:
-      - title: "Master of Business Administration"
+      - title: "Masters in Computer Science & Engineering"
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "Santa Clara University, CA."
+          url: "https://www.scu.edu"
+        date: "2022 - 2024"
+        GPA: "Wait for it."
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
+          
+      - title: "Bachelor of Technology in Computer Science"
         school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+          name: "Rajarambapu Institute of Technology"
+          url: "https://www.ritindia.edu"
+        date: "2015 - 2019"
+        GPA: "3.27 out of 4.0"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
 
           Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+            - Founding Team member of [RITinLUG](https://ritinlug.netlify.app/) Linux User Group.
+            - Computer Science Department Technical Head. 
+            - Conducted various technologies workshops for University Students.
         featuredLink:
           enable: true
           name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          url: "docs/wes-ug.pdf"
+      # - title: "High School"
+      #   school:
+      #     name: "Thomas Jefferson High School for Science and Technology."
+      #     url: "https://example.org"
+      #   GPA: "4.2 out of 5.0"
+      #   featuredLink:
+      #     enable: true
+      #     url: "https://example.com"
 
   # Achievements
   achievements:
     enable: true
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: SpotLight Award
+        content: I solved all problems with optimal solution at Opcito.
+        url: docs/spotlight_award.pdf
+      - title: Cisco Certified Network Associate
+        content: Cisco Certified Network Associate Routing and Switching.
+        url: https://www.youracclaim.com/badges/008f086d-6606-423c-9db5-5c5a90479f0a
+      - title: Red Hat Certified Engineer
+        content: Red Hat Certified Engineer RHEL 7.
+        url: "docs/RHCE.pdf"
+      - title: Red Hat Certified System Administrator
+        content: Red Hat Certified System Administrator RHEL 7.
+        url: "docs/RHCSA.pdf"
 
   # projects
   projects:
