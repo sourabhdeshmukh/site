@@ -332,7 +332,7 @@ params:
     btnName: Mail me
 
   footer:
-    # recentPosts: false
+    recentPosts: false
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
