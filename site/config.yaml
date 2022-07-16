@@ -18,7 +18,7 @@ Menus:
       name: Blog
       title: Blog posts
       #url: blogs/
-      url: https://sourabhdeshmukh.in
+      url: https://blog.sourabhdeshmukh.in
       weight: 2
     
     - identifier: resume
@@ -277,7 +277,7 @@ params:
 
   # projects
   projects:
-    enable: true
+    enable: false
     items:
       - title: Hugo Profile
         content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
