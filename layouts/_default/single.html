@@ -19,8 +19,9 @@
           <div class="title mb-5">
             <h1 class="text-center mb-4">{{ .Title }}</h1>
             <div class="text-center">
-              {{ .Params.author }} 
+              {{ if .Params.author | default true }} 
               <small>|</small>
+              {{ end }}
               {{ .Date.Format "Jan 2, 2006" }}
             </div>
           </div>
@@ -85,11 +86,13 @@
         </div>
       </div>
     </div>
+    {{ if .Params.comments | default true }}
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-9 p-4">
         {{ template "_internal/disqus.html" . }}
       </div>
     </div>
+    {{ end }}
   </div>
   <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
     <i class="fas fa-angle-up"></i>

@@ -7,8 +7,8 @@
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; {{ now.Format "2006"}} {{ .Site.Params.copyright }} All Rights Reserved
-            <div class="text-secondary">
+            <p>Copyright &copy; {{ .Site.Params.copyrightYear }}-{{ now.Format "2006" }}. sourabhdeshmukh.in. Published with &#10084; Hugo. <a {{ if eq .Permalink "/privacy/" }} active {{ end }} href="/sourabhdeshmukhs-privacy-policy">Privacy Policy</a> and <a {{ if eq .RelPermalink "/Terms/" }} active {{ end }} href="/sourabhdeshmukhs-terms-of-service">Terms</a>.</p>
+            <!--<div class="text-secondary">
                 Made with
                 <span class="text-danger">
                     &#10084;
@@ -18,7 +18,7 @@
                     title="Designed and developed by gurusabarish">
                     Hugo Profile
                 </a>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>
