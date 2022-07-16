@@ -24,7 +24,7 @@ Menus:
     - identifier: resume
       name: Resume
       title: Resume 
-      url: /docs/resume.pdf
+      url: docs/resume.pdf
       weight: 2
 
 #     - identifier: gallery
@@ -129,19 +129,21 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
+      I am a software engineer with a passion for Software Development, Full-Stack Development and DevOps Engineer. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology. I am currently Computer Science Masters Student at [Santa Clara University.](https://www.scu.edu) in Santa Clara, CA. 
 
-      I am currently working on a project that will be used to help people find the best way to get around the city.
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Following are a few technologies and Tools I've been working with recently:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
-        - "React"
-        - "Node"
-        - "Express"
+        - "Web Technologies (HTML, CSS, Javascript)."
+        - "Programming Languages (C, C++, Python, Java, GO)."
+        - "Cloud Platforms (AWS, GCP)."
+        - "Virtualization (K8S, Docker)."
+        - "Automation Tools (Ansible, Puppet, Terraform, Helm)."
+        - "Monitoring Tools (ELK, Nagios, Munin)."
+        - "Databases (MySQL, Redis)."
+        - "CICD (Jenkins, Circle CI)."
+        - "DevOps."
 
   # Experience
   experience:
