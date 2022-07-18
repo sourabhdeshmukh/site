@@ -7,18 +7,16 @@
                         height="40px" width="40px">
                 </a>
             </div>
-            <p>Copyright &copy; {{ .Site.Params.copyrightYear }}-{{ now.Format "2006" }}. sourabhdeshmukh.in. Published with &#10084; Hugo. <a {{ if eq .Permalink "/privacy/" }} active {{ end }} href="/sourabhdeshmukhs-privacy-policy">Privacy Policy</a> and <a {{ if eq .RelPermalink "/Terms/" }} active {{ end }} href="/sourabhdeshmukhs-terms-of-service">Terms</a>.</p>
-            <!--<div class="text-secondary">
-                Made with
+            <p>Copyright &copy; {{ .Site.Params.copyrightYear }}-{{ now.Format "2006" }}. sourabhdeshmukh.in. Published with &#10084; <a href="https://gohugo.io/" target="_blank">Hugo</a> and <a href="https://github.com/gurusabarish/hugo-profile" target="_blank" title="Designed and developed by gurusabarish">Hugo Profile</a></p>
+            <div class="text-secondary">
+            <!--    Made with
                 <span class="text-danger">
                     &#10084;
                 </span>
                 and
-                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
-                    title="Designed and developed by gurusabarish">
-                    Hugo Profile
-                </a>
-            </div>-->
+            -->
+                <a {{ if eq .Permalink "/privacy/" }} active {{ end }} href="/sourabhdeshmukhs-privacy-policy">Privacy Policy</a> and <a {{ if eq .RelPermalink "/Terms/" }} active {{ end }} href="/sourabhdeshmukhs-terms-of-service">Terms</a>.
+            </div>
         </div>
     </div>
 </div>

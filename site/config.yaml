@@ -130,7 +130,7 @@ params:
     title: "About Me"
     image: "/images/about.svg"
     content: |-
-      I am a Software Engineer passionate about Software Development, Full-Stack Development, and DevOps engineering. I have a background in computer science and mathematics and a strong interest in the intersection of technology. I am currently Computer Science Masters's Student at [Santa Clara University.](https://www.scu.edu) in Santa Clara, CA. 
+      I am a Software Engineer passionate about Software Development, Full-Stack Development, and DevOps engineering. I have a background in computer science and mathematics and a strong interest in the intersection of technology. I am currently Computer Science and Engineering Graduate Student at [Santa Clara University.](https://www.scu.edu) in California.
 
     skills:
       enable: true
