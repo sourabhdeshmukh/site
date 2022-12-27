@@ -111,6 +111,8 @@ params:
       enable: true
       name: "Resume"
       url: "docs/resume.pdf"
+      download: true
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -333,7 +335,12 @@ params:
     btnName: Mail me
 
   footer:
-    recentPosts: false
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
