@@ -2,6 +2,9 @@
 /content
 /static/images
 .vscode
+site/.hugo_build.lock
+site/public/
+themes/
 
 ### Hugo ###
 # Generated files by hugo
