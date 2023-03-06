@@ -24,7 +24,7 @@ Menus:
     - identifier: resume
       name: Resume
       title: Resume 
-      url: docs/resume.pdf
+      url: docs/SourabhDeshmukhResume.pdf
       weight: 2
 
 #     - identifier: gallery
