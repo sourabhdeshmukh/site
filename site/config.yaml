@@ -265,6 +265,9 @@ params:
   achievements:
     enable: true
     items:
+      - title: Certified Kubernetes Engineer
+        content: Achieved Kubernetes administrator certification from CNCF.
+        url: docs/cka.pdf
       - title: SpotLight Award
         content: I solved all problems with optimal solution at Opcito.
         url: docs/spotlight_award.pdf
