@@ -110,7 +110,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "docs/resume.pdf"
+      url: "docs/SourabhDeshmukhResume.pdf"
       download: true
       newPage: false
     socialLinks:
