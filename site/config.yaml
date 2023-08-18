@@ -1,7 +1,7 @@
 baseURL: "https://sourabhdeshmukh.in"
 languageCode: "en-us"
 title: "Sourabh Deshmukh"
-theme: hugo-profile
+theme: site
 
 Paginate: 3
 disqusShortname: sourabhdeshmukh
