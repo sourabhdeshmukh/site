@@ -1,7 +1,7 @@
 baseURL: "https://sourabhdeshmukh.in"
 languageCode: "en-us"
 title: "Sourabh Deshmukh"
-theme: hugo-profile
+theme: site
 
 Paginate: 3
 disqusShortname: sourabhdeshmukh
@@ -342,7 +342,8 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: false
+      disable: true
+      #enable: false
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
