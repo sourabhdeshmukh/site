@@ -342,7 +342,8 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: false
+      disable: true
+      #enable: false
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
