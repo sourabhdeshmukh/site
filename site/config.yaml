@@ -60,7 +60,7 @@ params:
 
   theme:
     disableThemeToggle: false
-    defaultTheme: "dark" # light
+    defaultTheme: light
 
   # font:
   #   fontSize: 1.5rem # default: 1rem
@@ -138,14 +138,15 @@ params:
       enable: true
       title: "Following are a few technologies and tools I've been working with recently:"
       items:
-        - "Web Technologies (HTML, CSS, Javascript)."
-        - "Programming Languages (C, C++, Python, Java, GO)."
-        - "Cloud Platforms (AWS, GCP)."
-        - "Virtualization (K8S, Docker)."
-        - "Automation Tools (Ansible, Puppet, Terraform, Helm)."
-        - "Monitoring Tools (ELK, Nagios, Munin)."
-        - "Databases (MySQL, Redis)."
-        - "CICD (Jenkins, Circle CI)."
+        - "Web Technologies - HTML, CSS, Javascript, Reactjs, Nodejs, Flask, Vuejs, REST APIs, Bootstrap."
+        - "Programming Languages - C, C++, Python, Java, GO, TypeScript."
+        - "Cloud Platforms - AWS, GCP, Azure."
+        - "Virtualization - Kubernetes, Docker, Openshift."
+        - "Automation - Ansible, Puppet, Terraform, Helm, kustomize."
+        - "Monitoring - ELK, Nagios, Munin, splunk."
+        - "Collaboration - Confluence, Jira, Git, SVN, Bitbucket"
+        - "Databases - MySQL, Redis, MariaDB, MongoDB."
+        - "CICD - Jenkins, Circle CI, ArgoCD, Github Actions."
         - "DevOps."
 
   # Experience
