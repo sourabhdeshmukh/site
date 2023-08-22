@@ -152,6 +152,21 @@ params:
   experience:
     enable: true
     items:
+      - job: "Linux Cloud Engineer Intern"
+        company: "Hobby Lobby"
+        companyUrl: "https://www.hobbylobby.com/"
+        date: "June 2023 - Sept 2023"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I completed my summer 2023 internship as a Linux Cloud Engineer at Hobby Lobby.
+        content: |
+          - Streamlined Microservices deployments leveraging Openshift, comprising automated software delivery incorporating Gitops on the on-premises connected and disconnected environments.
+          - Alleviated 25% workload on jenkins servers by implementing gitops operations on hybrid infrastructure.
+    
       - job: "Devops Engineer"
         company: "Opcito"
         companyUrl: "https://www.opcito.com/"
@@ -166,9 +181,9 @@ params:
         content: |
           I have worked as a DevOps Engineer at [Opcito Technologies Pvt.Ltd.](https://www.opcito.com) in Pune, India. I have been assigned to one of the clients offering services for online video optimization and online video analytics. It is US based client and headquartered in Silicon Valley."
           
-          - I was responsible for configuring and setting up CICD pipelines using Jenkins to package and test Android and IOS applications and published them on Dropbox and Atlassian Confluence page.
-          - Set up CircleCI pipelines with git and wrote helm charts to deploy application components with Kubernetes and Rancher on the GKE cluster.
-          - Assisted with terraform code for configuration and deployment of AWS WAF rules.
+          - Configured and set up Jenkins CI pipelines to package and test 15+ Android and IOS applications, published them on Dropbox and Atlassian Confluence page, augmenting developer efficiency by 30%.
+          - Set up CircleCI pipelines with git and wrote helm charts to deploy Microservices and application components with Kubernetes and Rancher on the GKE cluster that speeds up the deployment/development process by 25%.
+          - Assisted with Terraform code to configure and deploy AWS WAF rules and AWS Guard duty.
 
       - job: "Software Engineer"
         company: "kPoint"
@@ -183,11 +198,11 @@ params:
         content: |
           I have worked as a Software Engineer at [kPoint Technologies Pvt.Ltd.](https://www.kpoint.com) in Pune, India. kPoint is a versatile and scalable video content management web-based platform. That caters to a wide range from individuals and small teams who need no-fuss hosting to global enterprises with complex integrations and performance guarantees.
 
-          - I was responsible for structuring CICD end-to-end pipelines using Jenkins to build, test and deploy the application to QA/Staging/Prod environments.
-          - Dockerized product application components to reduce dependency issues. Optimized docker images with multi stag build and reduced layers in the Docker Image.
-          - Managed several system components order using automation scripts (Python & Shell) and tools.
-          - Reduced cost of AWS resources by converting on-demand resources to spot using terraform.
-          - Centralized system and application logging using ELK stack. Designed Monitoring dashboards using Kibana.
+          - Structured CICD end-to-end pipelines harnessing Jenkins to build, test and deploy the Microservices applications.
+          - Dockerized Microservices to reduce dependency issues, optimized Docker images with multi-stage build, and cut down layers in the Docker image, resulting in a 40% improvement in deployment efficiency.
+          - Formulated and implemented automation scripts taking advantage of Python & Shell that led to the development of several system components, resulting in a 20% increase in productivity.
+          - Decreased 50% cost of AWS resources by converting on-demand resources to spot services using IaC.
+          - Centralized system & application logging adopting ELK stack, scripted monitoring dashboards using Python on Kibana, resulting in a 20% improvement in debugging time.
 
       - job: "Software Engineer (Internship)"
         company: "kPoint"
@@ -202,10 +217,9 @@ params:
         content: |
           I have worked as a Software Engineer at [kPoint Technologies Pvt.Ltd.](https://www.kpoint.com) in Pune, India. kPoint is a versatile and scalable video content management web-based platform. That caters to a wide range from individuals and small teams who need no-fuss hosting to global enterprises with complex integrations and performance guarantees.
 
-          - Implemented staging setup of kPoint web application and Deployed on AWS cloud.
-          - I was responsible for infrastructure automation using terraform, server and application configuration automation using Puppet and python scripts, and CICD Deployment using Jenkins pipeline.
-          - Production Servers and application monitoring using Nagios Server and Munin Monitoring. Deployed monitoring scripts on production servers to maintain 24/7 availability of the application and reduced downtime.
-          - Configured AWS Guard duty and AWS WAF to secure the production cloud from external attacks.
+          - Lead a team of 2 interns and implemented kPoint web application staging setup and rolled out on AWS cloud.
+          - Wrote an AWS cloud infrastructure for scaling applications employing Terraform coding and application configuration using Puppet and Python scripts, resulting in a 90% time reduction of resources provisioning.
+          - Performed application monitoring on Production Servers operating with Nagios and Munin Monitoring, putting together monitoring scripts to maintain 24/7 application availability and mitigate downtime.
 
       - job: "Software Engineer (Internship)"
         company: "CloudYuga"
@@ -220,8 +234,7 @@ params:
         content: |
           I have worked as a Software Engineer Summer Intern at [CloudYuga Technologies Pvt.Ltd.](https://www.cloudyuga.guru) in Bangalore, India. CloudYuga is a startup consultancy that helps companies and individuals transform their careers in the Cloud Native Technology space. Get trained on Kubernetes Technologies and other underline tools.
 
-          - I was responsible for writing a web application from scratch using NodeJS, Docker, Docker Compose, and Markdown.
-          - The primary focus of the building application was to reduce individual configuration tasks at Kubernetes classroom training.
+          - Developed an interactive full-stack web application educational platform, minimizing individual configuration efforts for installation and enhancing the classroom training experience by 50%.
 
   # Education
   education:
@@ -233,7 +246,7 @@ params:
           name: "Santa Clara University, CA."
           url: "https://www.scu.edu"
         date: "2022 - 2024"
-        GPA: "Wait for it."
+        GPA: "4/4"
         content: |-
           
       - title: "Bachelor of Technology in Computer Science"
@@ -283,52 +296,52 @@ params:
 
   # projects
   projects:
-    enable: false
+    enable: true
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+      - title: QuickBuy
+        content: The One-stop Shopping Destination. .
+        image: /images/projects/sitelogo.png
+        # featured:
+          # name: Github
+          # link: https://github.com/Snehal-Nikam/ecommerce
         # badges:
         #   - "Hugo"
         #   - "Bootstrap"
         #   - "Javascript"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/Snehal-Nikam/ecommerce
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
+      - title: Twitter Sentiment Analysis
+        content: Twitter sentiment analysis model that can effectively classify tweets as either positive or negative. 
+        image: /images/projects/twitter.svg
         featured:
           name: Demo
-          link: https://django-converter.herokuapp.com
+          link: https://twittersentimentpredictor.streamlit.app/
         # badges:
         #   - "Django"
         #   - "Bootstrap"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/sourabhdeshmukh/twitter_sentiment_analysis
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+      # - title: Hugo Profile V2
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/twitter.svg
+      #   featured:
+      #     name: Demo V2
+      #     link: https://hugo-profile-2.netlify.app
+      #   # badges:
+      #   #   - "Hugo"
+      #   #   - "Bootstrap"
+      #   #   - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
@@ -338,13 +351,13 @@ params:
     btnName: Mail me
 
   footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      disable: true
-      #enable: false
-      disableFeaturedImage: false
+    # recentPosts:
+    #   path: "blogs"
+    #   count: 3
+    #   title: Recent Posts
+    #   disable: true
+    #   #enable: false
+    #   disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
