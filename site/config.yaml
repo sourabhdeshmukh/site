@@ -3,7 +3,17 @@ languageCode: "en-us"
 title: "Sourabh Deshmukh"
 theme: site
 
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
 Paginate: 3
+enableRobotsTXT: true
 disqusShortname: sourabhdeshmukh
 #googleAnalytics: G-DWJJVE27WD
 
@@ -57,7 +67,8 @@ params:
   copyrightYear: '2018'
   # staticPath: ""  # The path to serve the static files from
   favicon: "/images/apple-icon-precomposed.png"
-
+  useBootstrapCDN: false
+  animate: true
   theme:
     disableThemeToggle: false
     defaultTheme: light
@@ -67,6 +78,12 @@ params:
   #   fontWeight: 500 # default: 400
   #   lineHeight: 1 # default: 1.5
   #   textAlign: right # default: left
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
 
   # color preference
   # color:
@@ -99,6 +116,18 @@ params:
   #     disableAchievements: true
   #     disableContact: true
 
+  navbar:
+    align: ms-auto 
+    brandName: "sourabhdeshmukh" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
   # Hero
   hero:
     enable: true
@@ -107,6 +136,8 @@ params:
     subtitle: "I am a Software Engineer"
     content: "I am a passionate Software Engineer, Full-Stack engineer, and DevOps Engineer. I use modern technologies to implement various software applications that look great, feel fantastic, and function correctly."
     image: /images/profile.jpg
+    bottomImage:
+      enable: true
     button:
       enable: true
       name: "Resume"
@@ -121,7 +152,7 @@ params:
           url: https://www.twitter.com/100rabhdeshmukh
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/sourabh-deshmukh
-        - icon: fa fa-envelope
+        - icon: fab fa-envelope
           url: mailto:sourabh.deshmukh.988@gmail.com
         #- icon: /fav.png
         #  url: "https://example.com"
@@ -138,16 +169,25 @@ params:
       enable: true
       title: "Following are a few technologies and tools I've been working with recently:"
       items:
-        - "Web Technologies - HTML, CSS, Javascript, Reactjs, Nodejs, Flask, Vuejs, REST APIs, Bootstrap."
-        - "Programming Languages - C, C++, Python, Java, GO, TypeScript."
-        - "Cloud Platforms - AWS, GCP, Azure."
-        - "Virtualization - Kubernetes, Docker, Openshift."
-        - "Automation - Ansible, Puppet, Terraform, Helm, kustomize."
-        - "Monitoring - ELK, Nagios, Munin, splunk."
-        - "Collaboration - Confluence, Jira, Git, SVN, Bitbucket"
-        - "Databases - MySQL, Redis, MariaDB, MongoDB."
-        - "CICD - Jenkins, Circle CI, ArgoCD, Github Actions."
-        - "DevOps."
+        - Web Technologies
+          - HTML, CSS, Javascript, Reactjs, Nodejs, Flask, Vuejs, REST APIs, Bootstrap.
+        - Programming Languages 
+          - C, C++, Python, Java, GO, TypeScript.
+        - Cloud Platforms 
+          - AWS, GCP, Azure.
+        - Virtualization 
+          - Kubernetes, Docker, Openshift.
+        - Automation 
+          - Ansible, Puppet, Terraform, Helm, kustomize.
+        - Monitoring 
+          - ELK, Nagios, Munin, splunk.
+        - Collaboration 
+          - Confluence, Jira, Git, SVN, Bitbucket
+        - Databases 
+          - MySQL, Redis, MariaDB, MongoDB.
+        - CICD 
+          - Jenkins, Circle CI, ArgoCD, Github Actions.
+        - DevOps.
 
   # Experience
   experience:
@@ -247,7 +287,7 @@ params:
           name: "Santa Clara University, CA."
           url: "https://www.scu.edu"
         date: "2022 - 2024"
-        GPA: "4/4"
+        GPA: "3.95 out of 4.0"
         content: |-
           
       - title: "Bachelor of Technology in Computer Science"
@@ -282,18 +322,23 @@ params:
       - title: Certified Kubernetes Engineer
         content: Achieved Kubernetes administrator certification from CNCF.
         url: docs/cka.pdf
+        image: /images/achievment.jpg
       - title: SpotLight Award
         content: I solved all problems with optimal solution at Opcito.
         url: docs/spotlight_award.pdf
+        image: /images/achievment.jpg
       - title: Cisco Certified Network Associate
         content: Cisco Certified Network Associate Routing and Switching.
         url: https://www.youracclaim.com/badges/008f086d-6606-423c-9db5-5c5a90479f0a
+        image: /images/achievment.jpg
       - title: Red Hat Certified Engineer
         content: Red Hat Certified Engineer RHEL 7.
         url: "docs/RHCE.pdf"
+        image: /images/achievment.jpg
       - title: Red Hat Certified System Administrator
         content: Red Hat Certified System Administrator RHEL 7.
         url: "docs/RHCSA.pdf"
+        image: /images/achievment.jpg
 
   # projects
   projects:
@@ -301,14 +346,15 @@ params:
     items:
       - title: QuickBuy
         content: The One-stop Shopping Destination. .
-        image: /images/projects/sitelogo.png
+        image: /images/projects/ecom-home.png
         # featured:
           # name: Github
           # link: https://github.com/Snehal-Nikam/ecommerce
-        # badges:
-        #   - "Hugo"
-        #   - "Bootstrap"
-        #   - "Javascript"
+        badges:
+          - "JAVA"
+          - "Spring boot"
+          - "Vuejs"
+          - "Mysql"
         links:
         #   - icon: fa fa-envelope
         #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
@@ -319,13 +365,14 @@ params:
 
       - title: Twitter Sentiment Analysis
         content: Twitter sentiment analysis model that can effectively classify tweets as either positive or negative. 
-        image: /images/projects/twitter.svg
+        image: /images/projects/tsa.png
         featured:
           name: Demo
           link: https://twittersentimentpredictor.streamlit.app/
-        # badges:
-        #   - "Django"
-        #   - "Bootstrap"
+        badges:
+          - "Python"
+          - "Streamlit"
+          - "Twitter API v2"
         links:
           - icon: fab fa-github
             url: https://github.com/sourabhdeshmukh/twitter_sentiment_analysis
@@ -348,20 +395,44 @@ params:
   contact:
     enable: true
     content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-    email: gurusabarisha@gmail.com
+    email: sourabh.deshmukh.988@gmail.com
     btnName: Mail me
 
   footer:
-    # recentPosts:
-    #   path: "blogs"
-    #   count: 3
-    #   title: Recent Posts
-    #   disable: true
-    #   #enable: false
-    #   disableFeaturedImage: false
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
       twitter: https://twitter.com
       #instagram: https://instagram.com
       #facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
