@@ -134,7 +134,7 @@ params:
     intro: "Hi, my name is"
     title: "Sourabh Deshmukh."
     subtitle: "I am a Software Engineer"
-    content: "I am a passionate Software Engineer, Full-Stack engineer, and DevOps Engineer. I use modern technologies to implement various software applications that look great, feel fantastic, and function correctly."
+    content: "I am a passionate Software Engineer, DevOps/Site Reliability Engineer. I use modern technologies to implement various software applications that look great, feel fantastic, and function correctly."
     image: /images/profile.jpg
     bottomImage:
       enable: true
