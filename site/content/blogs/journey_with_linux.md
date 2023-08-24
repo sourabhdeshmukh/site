@@ -8,7 +8,7 @@ tags:
   - Debian
   - Red Hat
   - OS
-image: /images/post.jpg
+image: /images/blogs/linux.jpg
 description: ""
 toc: false
 ---
