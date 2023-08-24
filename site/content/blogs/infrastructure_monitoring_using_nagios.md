@@ -10,7 +10,7 @@ tags:
   - tools
   - Open Source
   - Infrastructure
-image: /images/post.jpg
+image: /images/blogs/monitoring.jpg
 description: ""
 toc: true
 ---

@@ -134,7 +134,7 @@ params:
     intro: "Hi, my name is"
     title: "Sourabh Deshmukh."
     subtitle: "I am a Software Engineer"
-    content: "I am a passionate Software Engineer, Full-Stack engineer, and DevOps Engineer. I use modern technologies to implement various software applications that look great, feel fantastic, and function correctly."
+    content: "I am a passionate Software Engineer, DevOps/Site Reliability Engineer. I use modern technologies to implement various software applications that look great, feel fantastic, and function correctly."
     image: /images/profile.jpg
     bottomImage:
       enable: true
@@ -163,7 +163,7 @@ params:
     title: "About Me"
     image: "/images/about.jpg"
     content: |-
-      I am a Software Engineer passionate about Software Development, Full-Stack Development, and DevOps engineering. I have a background in computer science and mathematics and a strong interest in the intersection of technology. I am currently Computer Science and Engineering Graduate Student at [Santa Clara University.](https://www.scu.edu) in California.
+      I am a Software Engineer passionate about Software Development, Full-Stack Development, and DevOps engineering. I have a background in computer science and mathematics and a strong interest in the intersection of technology. I am currently Computer Science and Engineering Graduate Student at [Santa Clara University](https://www.scu.edu), Santa Clara, CA, USA.
 
     skills:
       enable: true

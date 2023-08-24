@@ -8,7 +8,7 @@ tags:
   - Docker
   - Virtual Machine
   - Containers
-image: /images/post.jpg
+image: /images/blogs/docker.jpg
 description: ""
 toc: true
 ---

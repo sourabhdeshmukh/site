@@ -9,7 +9,7 @@ tags:
   - Freenode
   - hexchat
   - tutorial
-image: /images/post.jpg
+image: /images/blogs/irc.png
 description: ""
 toc: true
 ---
