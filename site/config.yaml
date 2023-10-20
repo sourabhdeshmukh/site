@@ -180,13 +180,13 @@ params:
         - Automation 
           - Ansible, Puppet, Terraform, Helm, kustomize.
         - Monitoring 
-          - ELK, Nagios, Munin, splunk.
+          - ELK, Nagios, Munin, Splunk.
         - Collaboration 
           - Confluence, Jira, Git, SVN, Bitbucket
         - Databases 
           - MySQL, Redis, MariaDB, MongoDB.
         - CICD 
-          - Jenkins, Circle CI, ArgoCD, Github Actions.
+          - Jenkins, Circle CI, ArgoCD, GitHub Actions.
         - DevOps.
 
   # Experience
@@ -206,9 +206,9 @@ params:
           content: I completed my summer 2023 internship as a Linux Cloud Engineer at Hobby Lobby.
         content: |
           - Streamlined Microservices deployments leveraging Openshift, comprising automated software delivery incorporating Gitops on the on-premises connected and disconnected environments.
-          - Alleviated 25% workload on jenkins servers by implementing gitops operations on hybrid infrastructure.
+          - Alleviated 25% of workload on Jenkins servers by implementing gitops operations on hybrid infrastructure.
     
-      - job: "Devops Engineer"
+      - job: "DevOps Engineer"
         company: "Opcito"
         companyUrl: "https://www.opcito.com/"
         date: "Aug 2021 - Aug 2022"
@@ -239,7 +239,7 @@ params:
         content: |
           I have worked as a Software Engineer at [kPoint Technologies Pvt.Ltd.](https://www.kpoint.com) in Pune, India. kPoint is a versatile and scalable video content management web-based platform. That caters to a wide range from individuals and small teams who need no-fuss hosting to global enterprises with complex integrations and performance guarantees.
 
-          - Structured CICD end-to-end pipelines harnessing Jenkins to build, test and deploy the Microservices applications.
+          - Structured CICD end-to-end pipelines harnessing Jenkins to build, test, and deploy the Microservices applications.
           - Dockerized Microservices to reduce dependency issues, optimized Docker images with multi-stage build, and cut down layers in the Docker image, resulting in a 40% improvement in deployment efficiency.
           - Formulated and implemented automation scripts taking advantage of Python & Shell that led to the development of several system components, resulting in a 20% increase in productivity.
           - Decreased 50% cost of AWS resources by converting on-demand resources to spot services using IaC.
@@ -251,7 +251,7 @@ params:
         date: "Jan 2019 - Sept 2019"
         info:
           enable: true
-          content: I worked as a Software Engineer Intern for aproximately one year in kPoint.
+          content: I worked as a Software Engineer Intern for approximately one year in kPoint.
         featuredLink:
           enable: false
           url: "https://example.com"
@@ -324,7 +324,7 @@ params:
         url: docs/cka.pdf
         image: /images/achievment.jpg
       - title: SpotLight Award
-        content: I solved all problems with optimal solution at Opcito.
+        content: I solved all problems with optimal solutions at Opcito.
         url: docs/spotlight_award.pdf
         image: /images/achievment.jpg
       - title: Cisco Certified Network Associate
@@ -345,7 +345,7 @@ params:
     enable: true
     items:
       - title: QuickBuy
-        content: The One-stop Shopping Destination. .
+        content: The One-stop Shopping Destination.
         image: /images/projects/ecom-home.png
         # featured:
           # name: Github
@@ -406,9 +406,9 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
+      github: https://github.com/sourabhdeshmukh
+      linkedin: https://linkedin.com/in/sourabh-deshmukh
+      twitter: https://twitter.com/100rabhdeshmukh
       #instagram: https://instagram.com
       #facebook: https://facebook.com
 
