@@ -323,6 +323,10 @@ params:
         content: Achieved Kubernetes administrator certification from CNCF.
         url: docs/cka.pdf
         image: /images/achievment.jpg
+      - title: AWS Certified Solutions Architect - Associate
+        content: Achieved Solutions Architect certification from AWS.
+        url: docs/AWS-SAA.pdf
+        image: /images/achievment.jpg
       - title: SpotLight Award
         content: I solved all problems with optimal solutions at Opcito.
         url: docs/spotlight_award.pdf
