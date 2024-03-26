@@ -193,6 +193,20 @@ params:
   experience:
     enable: true
     items:
+      - job: "DevOps Engineer"
+        company: "Usage AI"
+        companyUrl: "https://usage.ai/"
+        date: "April 2024 - Present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: true
+          content: DevOps Engineer at Usage AI.
+        content: |
+          - Independently coordinated the migration from ECS to EKS, ensuring a smooth transition of containerized workloads while improving scalability and resource utilization.
+
       - job: "Linux Cloud Engineer Intern"
         company: "Hobby Lobby"
         companyUrl: "https://www.hobbylobby.com/"
@@ -287,9 +301,13 @@ params:
           name: "Santa Clara University, CA."
           url: "https://www.scu.edu"
         date: "2022 - 2024"
-        GPA: "3.95 out of 4.0"
+        GPA: "3.92 out of 4.0"
         content: |-
-          
+        featuredLink:
+          enable: true
+          name: "Academic record"
+          url: "docs/transcript.pdf"
+
       - title: "Bachelor of Technology in Computer Science"
         school:
           name: "Rajarambapu Institute of Technology"
@@ -304,7 +322,7 @@ params:
             - Conducted various technologies workshops for University Students.
         featuredLink:
           enable: true
-          name: "My academic record"
+          name: "Academic record"
           url: "docs/wes-ug.pdf"
       # - title: "High School"
       #   school:
@@ -348,6 +366,24 @@ params:
   projects:
     enable: true
     items:
+      - title: Polyglot Vision
+        content: Transform English audio into Spanish subtitled videos.
+        image: /images/projects/polyglot.jpg
+        # featured:
+          # name: Github
+          # link: https://github.com/Snehal-Nikam/ecommerce
+        badges:
+          - "Python"
+          - "Vuejs"
+          - "Amazon Web Services"
+        links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: https://github.com/Snehal-Nikam/polyglot-vision-csen241
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
       - title: QuickBuy
         content: The One-stop Shopping Destination.
         image: /images/projects/ecom-home.png
