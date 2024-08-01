@@ -319,7 +319,7 @@ params:
           name: "Santa Clara University, CA."
           url: "https://www.scu.edu"
         date: "2022 - 2024"
-        GPA: "3.92 out of 4.0"
+        GPA: "3.933 out of 4.0"
         content: |-
         featuredLink:
           enable: true
