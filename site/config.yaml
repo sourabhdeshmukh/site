@@ -12,7 +12,8 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+pagination:
+   pagerSize: 3
 enableRobotsTXT: true
 disqusShortname: sourabhdeshmukh
 #googleAnalytics: G-DWJJVE27WD
@@ -68,6 +69,7 @@ params:
   # staticPath: ""  # The path to serve the static files from
   favicon: "/images/apple-icon-precomposed.png"
   useBootstrapCDN: false
+  mathjax: false
   animate: true
   theme:
     disableThemeToggle: false
@@ -120,6 +122,10 @@ params:
     align: ms-auto 
     brandName: "sourabhdeshmukh" # Brand name for the brand | default is the title variable
     disableSearch: false
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
     menus:
       disableAbout: false
       disableExperience: false
@@ -294,7 +300,7 @@ params:
   # Education
   education:
     enable: true
-    # index: true
+    index: false
     items:
       - title: "Masters in Computer Science & Engineering"
         school:
@@ -437,6 +443,7 @@ params:
     content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
     email: sourabh.deshmukh.988@gmail.com
     btnName: Mail me
+    btnLink: mailto:sourabh.deshmukh.988@gmail.com
 
   footer:
     recentPosts:
@@ -458,11 +465,14 @@ params:
 
   # Single pages like blog and post
   singlePages:
+    socialShare: true
     readTime:
       enable: true
       content: "min read"
     scrollprogress:
       enable: true
+    tags:
+      openInNewTab: true
 
   # For translations
   terms:
